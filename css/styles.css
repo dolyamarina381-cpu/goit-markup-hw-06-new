@@ -575,13 +575,18 @@ p {
         justify-content: start;
         max-width: 356px;
     }
+
+    .features-list-item .sub-second-title {
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: 1158px) {
-    .sub-second-title {
+    .features-list-item .sub-second-title {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
+        text-align: left;
     }
 
     .section {
@@ -834,7 +839,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 72px;
-    align-items: baseline;
+    align-items: center;
 }
 
 .footer-logo {
@@ -975,13 +980,14 @@ p {
 
 @media screen and (min-width: 768px) {
     .footer {
-        padding: 96px 0 96px 92px;
+        padding: 96px 0;
     }
 
     .footer-container {
         flex-wrap: wrap;
         flex-direction: unset;
         gap: 72px 24px;
+        align-items: flex-start;
     }
 
     .footer-text {
@@ -1015,7 +1021,7 @@ p {
 
 @media screen and (min-width: 1158px) {
     .footer {
-        padding: 100px;
+        padding: 100px 0;
     }
 
     .footer-container {
