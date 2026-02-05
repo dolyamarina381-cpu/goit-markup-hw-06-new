@@ -984,10 +984,12 @@ p {
     }
 
     .footer-container {
+        max-width: 584px;
+        margin: 0 auto;
         flex-wrap: wrap;
         flex-direction: unset;
         gap: 72px 24px;
-        align-items: flex-start;
+        align-items: baseline;
     }
 
     .footer-text {
@@ -1025,6 +1027,8 @@ p {
     }
 
     .footer-container {
+        max-width: unset;
+        margin: unset;
         flex-wrap: nowrap;
         align-items: baseline;
         gap: 0;
