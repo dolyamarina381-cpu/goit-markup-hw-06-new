@@ -486,16 +486,6 @@ p {
         background-position: center;
     }
 
-    @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-            background-image:
-                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url(../images/tab-hero-bg-2x.jpg);
-        }
-    }
-
     .hero-title {
         max-width: 496px;
         font-size: 56px;
@@ -504,6 +494,16 @@ p {
 
     .order-button {
         margin-top: 36px;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/tab-hero-bg-2x.jpg);
     }
 }
 
@@ -517,18 +517,18 @@ p {
         padding: 188px 0;
     }
 
-    @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-            background-image:
-                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url(../images/desc-hero-bg-2x.jpg);
-        }
-    }
-
     .order-button {
         margin-top: 48px;
+    }
+}
+
+@media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 1158px) and (min-resolution: 192dpi),
+screen and (min-width: 1158px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/desc-hero-bg-2x.jpg);
     }
 }
 
@@ -714,10 +714,12 @@ p {
         flex-wrap: wrap;
         flex-direction: unset;
         gap: 64px 24px;
+        justify-content: center;
     }
 
     .team-list-item {
         margin: 0;
+        width: 264px;
     }
 }
 
